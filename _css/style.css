@@ -1,0 +1,127 @@
+@font-face {
+    src: url('_fonts/TitilliumWeb-Black.ttf');
+    font-family: 'T-Black';
+}
+
+@font-face {
+    src: url('_fonts/TitilliumWeb-Regular.ttf');
+    font-family: 'T-Regular';
+}
+
+@font-face {
+    src: url('_fonts/Oswald-VariableFont_wght.ttf');
+    font-family: 'O';
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#interface {
+    background: url('_imagens-css/background-gramado-3.jpg');
+    width: 1400px;
+    height: 200px;
+    margin: auto;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'O';
+    font-size: 70pt;
+    text-shadow: 5px 5px 3px black;
+    margin: auto;
+    padding: 10px;
+    width: 450px;
+    color: white;
+}
+
+.interface-menu {
+    background: #222;
+    padding: 0px;
+    margin: auto;
+    font-size: 15pt;
+    color: white;
+    font-family: 'T-Regular';
+    width: 1400px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#cascata-link{
+    color: #222;
+}
+
+.menu {
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background: white;
+    color: #222;
+}
+
+.cascata {
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+    border: #222 solid;
+    border-top: none;
+}
+
+.cascata-campeonato,
+.cascata-europa {
+    background: white;
+    text-align: center;
+    list-style: none;
+    color: #222;
+    width: 180px;
+    margin: 0px;
+    margin-left: -13px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.cascata-campeonato li,
+.cascata-europa li {
+    padding: 10px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.campeonato:hover .cascata-campeonato,
+.europa:hover .cascata-europa {
+    visibility: visible;
+}
+
+.cascata-campeonato li:hover,
+.cascata-europa li:hover {
+    background: rgb(0, 107, 179);
+    color: white;
+}
+
+.cascata-campeonato li:active,
+.cascata-europa li:active {
+    background: rgba(0, 107, 179, 0.582);
+    color: #222;
+}
+
+
+.menu:active {
+    background: rgb(0, 69, 116);
+    color: white;
+}
+
+.campeonato:active,
+.europa:active {
+    background: white;
+    color: #222;
+}
