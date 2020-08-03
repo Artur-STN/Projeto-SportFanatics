@@ -1,0 +1,26 @@
+@font-face {
+    src: url('_fonts/TitilliumWeb-Black.ttf');
+    font-family: 'T-Black';
+}
+
+@font-face {
+    src: url('_fonts/TitilliumWeb-Regular.ttf');
+    font-family: 'T-Regular';
+}
+
+@font-face {
+    src: url('_fonts/Oswald-VariableFont_wght.ttf');
+    font-family: 'O';
+}
+
+.copa-brasil {
+    background: #222;
+    text-align: center;
+    font-family: 'O';
+    font-size: 70pt;
+    text-shadow: 5px 5px 3px black;
+    margin: auto;
+    padding: 10px;
+    width: 1380px;
+    color: white;
+}
