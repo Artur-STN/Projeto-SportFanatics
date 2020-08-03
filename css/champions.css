@@ -1,15 +1,15 @@
 @font-face {
-    src: url('_fonts/TitilliumWeb-Black.ttf');
+    src: url('fonts/TitilliumWeb-Black.ttf');
     font-family: 'T-Black';
 }
 
 @font-face {
-    src: url('_fonts/TitilliumWeb-Regular.ttf');
+    src: url('fonts/TitilliumWeb-Regular.ttf');
     font-family: 'T-Regular';
 }
 
 @font-face {
-    src: url('_fonts/Oswald-VariableFont_wght.ttf');
+    src: url('fonts/Oswald-VariableFont_wght.ttf');
     font-family: 'O';
 }
 
