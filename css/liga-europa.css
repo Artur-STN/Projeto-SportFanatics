@@ -12,15 +12,3 @@
     src: url('fonts/Oswald-VariableFont_wght.ttf');
     font-family: 'O';
 }
-
-.liga-europa{
-    background: #222;
-    text-align: center;
-    font-family: 'O';
-    font-size: 70pt;
-    text-shadow: 5px 5px 3px black;
-    margin: auto;
-    padding: 10px;
-    width: 1380px;
-    color: white;
-}

@@ -9,119 +9,124 @@
 }
 
 @font-face {
-    src: url('fonts/Oswald-VariableFont_wght.ttf');
-    font-family: 'O';
+    src: url('fonts/Rowdies-Regular.ttf');
+    font-family: 'R';
 }
 
-body {
-    background-color: white;
+* {
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: white;
+}
+
 #interface {
     background: url('imagens-css/background-gramado-3.jpg');
-    width: 1400px;
-    height: 200px;
-    margin: auto;
+
+    height: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #titulo {
-    text-align: center;
-    font-family: 'O';
-    font-size: 70pt;
-    text-shadow: 5px 5px 3px black;
-    margin: auto;
-    padding: 10px;
-    width: 450px;
+    font-family: 'T-black';
+    font-size: 10rem;
+
     color: white;
+}
+
+#menu {
+    background: #222;
 }
 
 .interface-menu {
     background: #222;
-    padding: 0px;
+    font-family: 'T-regular';
+    font-size: 1.5rem;
+
     margin: auto;
-    font-size: 15pt;
-    color: white;
-    font-family: 'T-Regular';
-    width: 1400px;
+    width: 1440px;
+
+    position: relative;
+
 }
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-#cascata-link{
-    color: #222;
+    list-style: none;
 }
 
 .menu {
-    display: inline-block;
-    text-align: center;
-    width: 160px;
-    padding: 10px;
-    cursor: pointer;
-}
+    color: white;
 
-.menu:hover {
-    background: white;
-    color: #222;
+    display: inline-block;
+
+    text-align: center;
+
+    width: 11.5rem;
+    padding: 0.5rem;
+
+    transition: ease 0.3s;
 }
 
 .cascata {
-    list-style: none;
+    background: white;
+    font-size: 1.4rem;
+
     position: absolute;
-    visibility: hidden;
-    border: #222 solid;
-    border-top: none;
+
+    margin-top: 8px;
+    margin-left: -8px;
+
+    display: none;
 }
 
-.cascata-campeonato,
-.cascata-europa {
-    background: white;
+.cascata a {
+    color: #222;
+}
+
+.cascata li {
+    width: 11.5rem;
+    padding: 0.5rem;
+
+    transition: ease 0.5s;
+}
+
+.menu:hover {
+    background: rgb(2, 102, 160);
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.menu:hover .cascata {
+    display: block;
+}
+
+.cascata li:hover {
+    background: rgb(0, 146, 231);
+    color: white;
+}
+
+.cascata li:active{
+    background: rgb(2, 102, 160);
+}
+
+#serie-name{
+    background: #222;
+    
+    font-family: 'O';
+    font-size: 70pt;
+    
     text-align: center;
-    list-style: none;
-    color: #222;
-    width: 180px;
-    margin: 0px;
-    margin-left: -13px;
-    margin-top: 10px;
-    padding: 0px;
-}
-
-.cascata-campeonato li,
-.cascata-europa li {
+    text-shadow: 5px 5px 3px black;
+    
+    margin: auto;
     padding: 10px;
-    padding-left: 0px;
-    margin: 0px;
-}
-
-.campeonato:hover .cascata-campeonato,
-.europa:hover .cascata-europa {
-    visibility: visible;
-}
-
-.cascata-campeonato li:hover,
-.cascata-europa li:hover {
-    background: rgb(0, 107, 179);
+    
     color: white;
-}
-
-.cascata-campeonato li:active,
-.cascata-europa li:active {
-    background: rgba(0, 107, 179, 0.582);
-    color: #222;
-}
-
-
-.menu:active {
-    background: rgb(0, 69, 116);
-    color: white;
-}
-
-.campeonato:active,
-.europa:active {
-    background: white;
-    color: #222;
 }
